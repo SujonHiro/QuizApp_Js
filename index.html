@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- quiz Initial page   -->
+      <div class="quiz_start_page">
+        <h1 class="title">Quiz App</h1>
+        <h3 class="sub-title">Are you ready to test your knowledge?</h3>
+        <button class="btn start-button" id="startQuizBtn">Start Quiz</button>
+      </div>
+
+      <!-- quiz Rule page   -->
+      <div>
+        <div class="quiz_Rules_page">
+          <h1 class="rules-title">Quiz App Rules</h1>
+          <div class="rules">
+            <p>
+              1. You will have only <span id="time">15</span> seconds to answer
+              each question
+            </p>
+            <p>2. Once you select an answer, it can't be undone</p>
+            <p>3. You can't select any option once time goes off</p>
+            <p>4. You can't exit from the Quiz while you're playing</p>
+            <p>5. You'll get points on the basis of correct answers</p>
+          </div>
+          <button class="btn button-section" id="continueBtn">Continue</button>
+        </div>
+      </div>
+
+      <!-- quiz page   -->
+      <div class="quiz_page">
+        <div class="timer">
+          <h1 class="timeSection">time</h1>
+          <h1 class="timeCount">15</h1>
+        </div>
+
+        <h1 class="question">1. Question comes here ?</h1>
+        <div class="option-div"></div>
+        <div class="btn-div">
+          <div class="btn backBTn">Back</div>
+          <div class="btn nextBtn">Next</div>
+        </div>
+      </div>
+
+      <div class="score_page">
+        <h1 class="result_text">
+
+        </h1>
+
+        <button class="btn " id="restart">Restart</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>

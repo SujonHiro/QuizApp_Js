@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.container{
+    position: relative;
+    width: 1000px;
+    margin: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.quiz_start_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.title{
+    text-align: center;
+    margin: 0 0 30px;
+}
+.start-button{
+    margin: auto;
+}
+
+
+/* quiz Rules page   */
+
+.rules-title{
+    text-align: center;
+    margin: 0 0 30px;
+}
+.quiz_Rules_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    display: none;
+}
+.rules{
+    margin: auto;
+}
+.button-section{
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* quiz page   */
+.quiz_page{
+    display: none;
+}
+.score_page{
+    display: none;
+}
+
+.btn-div{
+    display: flex;
+    justify-content: space-between;
+}
+.nextBtn{
+    border: 1px solid black;
+}
+
+.backBTn{
+    border: 1px solid black;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.options .option{
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.options p:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.timer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2px;
+}
+.selectedOptionele{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+   
+}
+.timeSection{
+    background: #000000;
+    color: #ffffff;
+    
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.timeCount{
+    background: #d80202;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    max-width: 200px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
